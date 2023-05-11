@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:git_sample/login_screen.dart';
 
 void main() {
@@ -15,17 +14,15 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return FlutterSizer(builder: (context, orientation, screenType) {
-      return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-            primarySwatch: Colors.cyan,
-            visualDensity: VisualDensity.adaptivePlatformDensity),
-        home: MyHomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+          primarySwatch: Colors.cyan,
+          visualDensity: VisualDensity.adaptivePlatformDensity),
+      home: MyHomePage(),
 //        SplashScreenAnim(),
-      );
-    });
+    );
   }
 }
 //

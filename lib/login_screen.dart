@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:git_sample/details_reports/form_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -26,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Center(
                 child: SingleChildScrollView(
                   child: Container(
-                    margin: EdgeInsets.all(2.h),
+                    margin: EdgeInsets.all(20),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -44,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Column(
                           children: <Widget>[
                             SizedBox(
-                              height: 2.h,
+                              height: 20,
                             ),
                             Container(
                               child: Center(
